@@ -21,3 +21,8 @@ export async function syncActivities() {
   
     return res.json();
   }
+export async function fetchAiSummary() {
+    const res = await fetch("http://localhost:4000/api/ai/summary");
+    return res.json();
+  }
+  

@@ -10,6 +10,7 @@ const authRoutes = require("./routes/auth");
 const app = express();
 const activityRoutes = require("./routes/activities");
 const analyticsRoutes=require("./routes/analytics");
+const aiRoutes=require('./routes/ai');
 
 
 app.use(cors());
@@ -27,6 +28,7 @@ mongoose
 app.use("/auth", authRoutes);
 app.use("/api/activities", activityRoutes);
 app.use("/api/analytics", analyticsRoutes);
+app.use("/api/ai",aiRoutes);
 
 
 // Health check

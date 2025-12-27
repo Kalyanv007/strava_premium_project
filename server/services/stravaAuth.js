@@ -10,7 +10,7 @@ async function getValidAccessToken(){
     if (athlete.tokenExpiresAt > now) {
         return athlete.accessToken;
       }
-//getting refresh token and updating into DB
+   //getting refresh token and updating into DB
     const response = await axios.post(
         "https://www.strava.com/oauth/token",
         {

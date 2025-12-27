@@ -5,6 +5,7 @@ import WeeklyStats from './components/WeeklyStats'
 import TrainingLoad from './components/TrainingLoad'
 import './App.css'
 import { syncActivities } from './api/analytics'
+import AISummary from './components/AIsummary'
 
 function App() {
   const [syncStatus, setSyncStatus] = useState("");
@@ -63,6 +64,7 @@ function App() {
       <h1>Strava AI Fitness Dashboard</h1>
       <WeeklyStats />
       <TrainingLoad />
+      <AISummary/>
       </div>
   );
 }
